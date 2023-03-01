@@ -1,0 +1,139 @@
+1 - Programa de soma
+
+print('Programa de uma soma simples entre 2 números!\n')
+
+num1 = int(input('Escreva o primeiro número a ser somado: '))
+num2 = int(input('Escreva o próximo número a ser somado: '))
+
+soma = num1 + num2
+
+print('A soma ', num1, '+', num2, '=', soma)
+
+2 - Conversão Metros para Milímetros
+
+print('Programa de conversão!\nMetros -> Milímetros\n')
+
+metros = float(input('Insira quantos metros você deseja converter: '))
+
+milimetros = metros*1000
+
+print(metros, 'm equivalem a ', milimetros, 'mm!')
+
+3 - Conversão de Dias para Segundos
+
+print('Programa de conversão!\nDias, Horas, Minutos -> Segundos\n')
+
+dias = int(input('Estipule uma quantidade de dias: '))
+horas = int(input('Agora estipule a quantidade de horas: '))
+minutos = int(input('Estipule a quantidade de minutos: '))
+segundos = int(input('E por fim, estipule os segundos: '))
+
+conversao = (minutos * 60) + (horas * 3600) + (dias * 86400) + segundos
+
+print('Todos estes valores somados, dão: ', conversao, 's!')
+
+
+4 - Cálculo de Aumento
+
+print('Programa de cálculo de aumentos!\n')
+
+salario = float(input('Insira o valor atual de seu salário: '))
+porcentagem = float(input('Insira a porcentagem do aumento: '))
+
+aumento = salario * (porcentagem / 100)
+
+salarioAtual = salario + aumento
+
+print('\nAqui estão os detalhes de seu salário!')
+print('Aumento: R$', aumento)
+print('Salário Atual: R$', salarioAtual)
+
+
+5 - Cálculo de desconto
+
+print('Programa de cálculo de descontos!\n')
+
+valor = float(input('Insira o valor atual do produto: '))
+porcentagem = float(input('Insira a porcentagem de desconto: '))
+
+desconto = valor * (porcentagem / 100)
+
+valorAtual = valor - desconto
+
+print('\nAqui estão os detalhes do preço de sua compra!')
+print('Desconto: R$', desconto)
+print('Valor a pagar: R$', valorAtual)
+
+6 - Cálculo de tempo de viagem
+
+print('Programa de cálculo de duração de uma viagem!\n')
+
+distancia = float(input('Insira a distância percorrida na viagem(em km): '))
+velocidade = float(input('Insira a velocidade média do carro durante a viagem(em km/h): '))
+
+tempo = distancia / velocidade
+
+print('O tempo gasto na viagem será de ', tempo, 'h!')
+
+
+7 - Conversão C para F
+
+print('Conversão de valores!\nGraus Celsius -> Fahrenheit\n')
+
+celsius = float(input('Digite uma temperatura na unidade de Graus Celsius: '))
+
+fahrenheit = (9 * celsius / 5) + 32
+
+print('\nA temperatura de ', celsius, '°C em Fahrenheit é de: ', fahrenheit, '°F')
+
+8 - Conversão F para C
+
+print('Conversão de valores!\nGraus Fahrenheit -> Celsius\n')
+
+fahrenheit = float(input('Digite uma temperatura na unidade de Graus Fahrenheit: '))
+
+celsius = (fahrenheit - 32) * 5 / 9
+
+print('\nA temperatura de ', fahrenheit, '°F em Celsius é de: ', celsius, '°C')
+
+9 - Cálculo de aluguel de carro
+
+print('Programa de cálculo de aluguel de carro!\n')
+
+dias = int(input('Escreva por quantos dias você alugou o carro: '))
+km = float(input('Escreva quantos km foram rodados com o carro: '))
+
+aluguel = (dias * 60) + (km * 0.15) 
+
+print('\nValores:\n60 reais o dia alugado\nR$0,15 por km rodado\n')
+
+print('O valor total do aluguel do carro ficou em R$', aluguel)
+
+10 - Cálculo de redução de vida
+
+# importando uma biblioteca de contas matemáticas do python
+import math
+
+print('Programa de cálculo de redução de vida!\n')
+
+qtdDiaria = int(input('Escreva quantos cigarros você fuma por dia: '))
+qtdAnos = int(input('Escreva por quantos anos você é usuário: '))
+
+qtdCigarros = qtdDiaria * (qtdAnos * 365) # qtdAnos * 365 pois aí calcularemos cada dia do ano
+
+minutosReduzidos = qtdCigarros * 10
+
+diasReduzidos = minutosReduzidos/1440
+
+# Arredondando a quantidade de dias para até 1 casa após a vírgula, caso queira 2 casas, multiplica e divide por 100, e assim em diante
+diasArredondados = (math.ceil(diasReduzidos*10)/10)
+
+print('Durante sua vida de fumante, você já teve o total de ', diasArredondados,' dias reduzidos na sua vida!')
+
+11 - Cálculo de caracteres 
+
+print('Programa de cálculo de caracteres\n')
+
+# definindo o valor que será convertido em strings para calcular quantos caracteres há nele
+numero = 2**1000000
+len(str(numero))
