@@ -1,0 +1,112 @@
+1 - Diferença de Triângulos
+
+print('Programa de análise de triângulos!\n')
+
+a = float(input('Insira o tamanho do primeiro lado do triângulo: '))
+b = float(input('Insira o tamanho do segundo lado do triângulo: '))
+c = float(input('Insira o tamanho do terceiro lado do triângulo: '))
+
+if a > abs(b - c) or b > abs(a - c) or c > abs(a - b):
+
+    print('É possível formar um triângulo :)')
+
+    if a == b == c:
+        print(f'O triângulo tem todos os lados iguais, se tornando um triângulo equilátero!')
+    elif a == b or b == c or a == c:
+        print(f'O triângulo tem 2 lados iguais, e 1 diferente, se tornando um triângulo isósceles!')
+    else:
+        print(f'O triângulo tem 3 lados diferentes, se tornando um triângulo escaleno!')
+
+else:
+    print('Não é possível formar um triângulo :(')
+
+2 - Identificação de ano bissexto
+
+print('Programa de identificação de ano bissexto!\n')
+
+ano = int(input('Insira o ano que você quer analisar: '))
+
+if ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0):
+    print(f'O ano {ano} é bissexto!')
+else:
+    print(f'O ano {ano} não e bissexto!')
+
+3 - Multa de pescador
+
+print('Programa de cálculo de rendimento!\n')
+
+peso = float(input('Insira quanto você pegou de peixe(em kg): '))
+
+if peso > 50:
+    excesso = peso - 50
+    multa = excesso * 4
+    print('\nOs valores abaixo são, respectivamente, o excesso de peso que você pegou de acordo com o regulamento, e a multa que você deverá pagar!')
+    print(f'Excesso: {excesso:.2f}kg\nMulta: R${multa:.2f}\n')
+else:
+    excesso = 0
+    multa = 0
+    print('\nVocê não excedeu nada, portnato...')
+    print(f'Excesso: {excesso:.2f}kg\nMulta: R${multa:.2f}\n')
+
+4 - Verificação do maior número
+
+print('Programa que verifica o maior número!\n')
+
+a = float(input('Insira um número a ser comparado: '))
+b = float(input('Insira o outro número para a comparação: '))
+c = float(input('Insira o último número para a comparação: '))
+
+numeros = (a, b, c)
+maior = max(numeros)
+
+print(f'O maior número entre os 3 é {maior}!')
+
+5 - Verificação do maior e menor número
+
+print('Programa que verifica o maior e menor número!\n')
+
+a = float(input('Insira um número a ser comparado: '))
+b = float(input('Insira o outro número para a comparação: '))
+c = float(input('Insira o último número para a comparação: '))
+
+numeros = (a, b, c)
+maior = max(numeros)
+menor = min(numeros)
+
+print(f'O maior número entre os 3 é {maior}, já o menor é {menor}!')
+
+6 - Cálculo de salário líquido
+
+print('Programa de cálculo de salário líquido!\n')
+
+ganhoHora = float(input('Insira quantos reais você ganha por hora trabalhada: '))
+horasTrabalhadas = float(input('Insira quantas horas você trabalhou no mês: '))
+
+salarioBruto = ganhoHora * horasTrabalhadas
+
+ir = salarioBruto * 0.11
+inss = salarioBruto * 0.08
+sindicato = salarioBruto * 0.05
+
+descontos = ir + inss + sindicato
+
+salarioLiquido = salarioBruto - descontos
+
+print(f'Seu salário bruto é de R${salarioBruto:.2f}!')
+print(f'Foram pagos R${ir:.2f} ao Imposto de Renda!')
+print(f'Foram pagos R${inss:.2f} ao INSS!')
+print(f'Foram pagos R${sindicato:.2f} ao Sindicato!')
+print(f'Seu salário líquido é de R${salarioLiquido:.2f}')
+
+7 - Loja de tintas
+
+print('Programa de cálculo de quantidade de latas de tinta!\n')
+
+metragem = float(input('Indique a metragem do local a ser pintado(em m²): '))
+
+latas = metragem / 54
+
+if metragem % 54 > 0:
+    latas = int(latas) + 1
+    preço = latas * 80
+    print(f'Será necessárias {latas} lata(s) de 18l de tinta para concluir a pintura e a conta ficará por R${preço:.2f}!')
