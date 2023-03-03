@@ -1,0 +1,83 @@
+1 - Análise de notas
+
+print('Programa para analisar uma nota!\nVálida/Inválida\n')
+
+nota = float(input('Digite uma nota: '))
+
+while nota < 0 or nota > 10:
+    print('\nNota inválida! Tente novamente...')
+    nota = float(input('Digite uma nota: '))
+
+    if nota >= 0 and nota <= 10:
+        print('\nNota válida!')
+        break
+
+2 - Análise de login
+
+print('Programa para analisar um login!\nNome/Senha\n')
+
+nome = str(input('Digite um nome: '))
+senha = str(input('Digite uma senha: '))
+
+while nome == senha:
+    print('\nNome e senha inválidos! Tente novamente...')
+    print('Aviso! Nome e senha devem ser diferentes!')
+    nome = str(input('Digite um nome: '))
+    senha = str(input('Digite uma senha: '))
+
+    if nome != senha:
+        print('\nNome e senha válidos!')
+        break
+
+3 - População de países
+
+print('Programa para analisar crescimento de países!\n')
+
+popA = 80000
+popB = 200000
+
+cresA = 0.03
+cresB = 0.015
+
+anos = 0
+
+while popA < popB:
+    popA = popA + popA * cresA
+    popB = popB + popB * cresB
+    anos = anos + 1
+    
+    if popA > popB:
+        print('\nPopulação do pais A ficou maior que o país B!')
+        print(f'Após {anos} anos o pais A ficou com {popA:.0f} habitantes, enquanto o país B com{popB:.0f} habitantes!')
+        break
+
+4 - Sequência de Fibonacci
+
+print('Programa sobre sequência de Fibonacci!\n')
+
+num = int(input('Escreva o número para a sequência de Fibonacci: '))
+
+a = 1
+b = 1
+count = 0
+
+while count <= num - 2:
+    
+    print(f'F{count} = {b}')
+
+    a, b = b, a+b
+
+    count += 1
+
+5 - Máximo divisor comum
+
+print('Programa para calcular o MDC!\n')
+
+a = int(input('Primeiro número para o MDC: '))
+b = int(input('Segundo número para o MDC: ')) 
+
+while a%b != 0:
+    a, b = b, a%b
+    
+    if a%b == 0:
+        print(f'O MDC é {b}!')
