@@ -1,0 +1,136 @@
+1 - Sortear números e descobrir o menor e o maior:
+import random
+
+print('Programa de comparação!\nSorteando numeros aleatorios e vendo o maior e menor!\n')
+
+sorteados = []
+maior = 1
+menor = 100
+
+for aleatorio in range(10):
+    aleatorio = random.randint(1,100)
+    
+    if aleatorio > maior:
+        maior = aleatorio
+        
+    if aleatorio < menor:
+        menor = aleatorio
+        
+    sorteados.append(aleatorio)
+    
+print(f'Dos números sorteados temos as seguintes informações: \nMenor Número: {menor}\nMaior Número: {maior}')
+
+
+2 - Números pares e ímpares:
+import random
+
+print('Programa de comparação!\nNúmeros pares e Ímpares!')
+
+num = random.sample(range(100),20)
+
+listaPar = []
+listaImpar = []
+
+for n in num:
+    if n % 2 == 0:
+        listaPar.append(n)
+    else:
+        listaImpar.append(n)
+
+print(f'Numeros pares: {listaPar}\nNumeros ímpares: {listaImpar}')
+
+
+
+3 - Vetores:
+import random
+
+print('Vetores de números aleatórios!')
+
+vet1 = random.sample(range(1, 101),10)
+vet2 = random.sample(range(1, 101),10)
+
+vet3 =  []
+
+for n in range(10):
+    vet3.append(vet1[n])
+    vet3.append(vet2[n])
+
+print(f'Vetor 1: {vet1}\nVetor 2: {vet2}\nVetor 3: {vet3}')
+
+
+4 - Palavras com letras iguais a python:
+import random
+
+texto = '''The Python Software Foundation and the global Python
+community welcome and encourage participation by everyone. Our community is based on
+mutual respect, tolerance, and encouragement, and we are working to help each other live up
+to these principles. We want our community to be more diverse: whoever you are, and
+whatever your background, we welcome you.'''
+
+
+print('Programa de análise de texto!\nQuais palavras têm letras iguais a "python"\n')
+
+print(f'Texto a ser analisado: \n{texto}')
+
+texto = texto.replace('.','')
+texto = texto.replace(',','')
+texto = texto.replace(':','')
+
+texto = texto.lower()
+texto = texto.split()
+
+def pythonica(p):
+    for letras in p:
+        if letras in 'python':
+            return p
+    return False
+
+confirmacao = str(input('Deseja começaar a rodar o programa? [S/N]')).upper()
+
+if (confirmacao == 'S'):
+    for p in texto:
+            print(pythonica(p))
+else:
+   exit()
+
+input()
+
+5 - Palavras com letras iguais a python e mais de 4 letras:
+import random
+
+texto = '''The Python Software Foundation and the global Python
+community welcome and encourage participation by everyone. Our community is based on
+mutual respect, tolerance, and encouragement, and we are working to help each other live up
+to these principles. We want our community to be more diverse: whoever you are, and
+whatever your background, we welcome you.'''
+
+
+print('Programa de análise de texto!\nQuais palavras têm letras iguais a "python"\n')
+
+print(f'Texto a ser analisado: \n{texto}')
+
+texto = texto.replace('.','')
+texto = texto.replace(',','')
+texto = texto.replace(':','')
+
+texto = texto.lower()
+texto = texto.split()
+
+def pythonica(p):
+    for letras in p:
+        if letras in 'python' and len(p) > 4:
+            return p
+    return False
+
+confirmacao = str(input('Deseja começar a rodar o programa? [S/N]')).upper()
+
+if (confirmacao == 'S'):
+    for p in texto:
+            print(pythonica(p))
+else:
+   exit()
+
+input()
+
+
+
