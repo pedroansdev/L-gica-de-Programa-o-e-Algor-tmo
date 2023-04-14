@@ -9,3 +9,4 @@ Escolha uma delas para começar a se aventurar:
 - <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Quarta%20lista%20de%20exerc%C3%ADcios%20-%20Python">Lista 4</a>
 - <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Quinta%20lista%20de%20exerc%C3%ADcios%20-%20Python">Lista 5</a>
 - <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Sexta%20lista%20de%20exerc%C3%ADcios%20-%20Python">Lista 6</a>
+- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/S%C3%A9tima%20lista%20de%20exerc%C3%ADcios%20-%20Python">Lista 7</a>
