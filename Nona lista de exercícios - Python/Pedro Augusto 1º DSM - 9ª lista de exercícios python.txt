@@ -1,0 +1,76 @@
+Questao A. First_Last6
+def first_last6(nums): 
+  if len(nums) == 0 or nums[0] != nums[-1]:
+    return False
+  return True
+
+Questao B. Same_First_Last
+def same_first_last(nums):
+  if len(nums) < 1 or nums[0] != nums[-1]:
+    return False
+  return True
+
+Questao C. Common_End
+def common_end(a, b):
+  return a[0] == b[0] or a[-1] == b[-1]
+
+Questao D. Maior_Ponta
+def maior_ponta(nums):
+  max(nums[0],nums[-1])
+  lista = []
+  for n in range(len(nums)):
+    lista.append(max(nums[0],nums[-1]))
+  return lista
+
+Questao E. Sum2
+def sum2(nums):
+  if len(nums) >= 2:
+    return sum(nums[:2])
+  else:
+    return sum(nums)
+
+Questao F. Middle_Way
+def middle_way(a, b):
+  return [a[len(a)//2],b[len(b)//2]]
+
+Questao G. Date_Fashion
+def date_fashion(eu, par):
+  if eu <= 2 or par <= 2:
+    return 0
+  elif eu >= 8 or par >= 8:
+    return 2
+  else:
+    return 1
+
+Questao H. Squirrel_Play
+def squirrel_play(temp, is_summer):
+  if temp >= 60 and temp <= 90 and is_summer == False:
+    return True
+  elif temp >= 60 and temp <= 100 and is_summer == True:
+    return True
+  else:
+    return False
+
+Questao I. Pego_Correndo
+def pego_correndo(speed, is_birthday):
+  if speed > 65 and speed <= 85 and is_birthday == True:
+    return 1
+  elif speed > 85 and is_birthday == True:
+    return 2
+  elif speed > 60 and speed <= 80 and is_birthday == False:
+    return 1
+  elif speed > 80 and is_birthday == False:
+    return 2
+  else:
+    return 0
+
+Questao J. Alarm_Clock
+def alarm_clock(day, vacation):
+  if day == 0 or day == 6 and vacation == True:
+    return 'off'
+  elif day > 0 and day < 6 and vacation == True:
+    return '10:00'
+  elif day > 0 and day < 6 and vacation == False:
+    return '7:00'
+  else:
+    return '10:00'
