@@ -3,15 +3,16 @@ Neste repositório estão todas as listas já feitas ou que ainda serão feitas 
 
 Escolha uma delas para começar a se aventurar:
 
-- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Primeira%20lista%20de%20exerc%C3%ADcios%20-%20Python">LISTA I</a>
-- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Segunda%20lista%20de%20exerc%C3%ADcios%20-%20Python">LISTA II</a>
-- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Terceira%20lista%20de%20exerc%C3%ADcios%20-%20Python">LISTA III</a>
-- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Quarta%20lista%20de%20exerc%C3%ADcios%20-%20Python">LISTA IV</a>
-- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Quinta%20lista%20de%20exerc%C3%ADcios%20-%20Python">LISTA V</a>
-- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Sexta%20lista%20de%20exerc%C3%ADcios%20-%20Python">LISTA VI</a>
-- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/S%C3%A9tima%20lista%20de%20exerc%C3%ADcios%20-%20Python">LISTA VII</a>
-- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Nona%20lista%20de%20exerc%C3%ADcios%20-%20Python">LISTA IX</a>
-- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Décima%20lista%20de%20exercícios%20-%20Python">LISTA X<a>
+- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%201%20-%20Python">LISTA I</a>
+- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%202%20-%20Python">LISTA II</a>
+- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%203%20-%20Python">LISTA III</a>
+- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%204%20-%20Python">LISTA IV</a>
+- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%205%20-%20Python">LISTA V</a>
+- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%206%20-%20Python">LISTA VI</a>
+- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%207%20-%20Python">LISTA VII</a>
+- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%209%20-%20Python">LISTA IX</a>
+- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%2010%20-%20Python">LISTA X<a>
+- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%2011%20-%20Python">LISTA XI<a>
 
 ## Observações
 
