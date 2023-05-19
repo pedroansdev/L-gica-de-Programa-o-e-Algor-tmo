@@ -1,0 +1,31 @@
+Questao A. Donuts
+def donuts(n):
+  if n >= 10:
+    return f'Número de donuts: muitos'
+  return f'Número de donuts: {n}'
+
+Questao B. Pontas
+def pontas(s):
+  if len(s) < 2:
+    return ''
+  return s[:2] + s[len(s)-2:]
+
+Questao C. Fixa_primeiro
+def fixa_primeiro(s):
+  return s[0] + s[1:].replace(s[0],'*')
+
+Questao D. Mistura2
+def mistura2(a, b):
+  return f'{b[:2] + a[2:]} {a[:2] + b[2:]}'
+
+Questao E. Palíndrome
+def palindrome(s):
+  return True if s == s[::-1] else False
+
+Questao F. Busca
+def busca(frase, palavra):
+  c = []
+  for x in range(len(frase)):
+    if frase[x:x+3] == palavra:
+      c.append(x)
+  return len(c)
