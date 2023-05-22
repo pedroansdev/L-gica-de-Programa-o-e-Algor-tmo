@@ -1,0 +1,37 @@
+Questao A. Fim_igual
+def fim_igual(words):
+  c = 0
+  for palavra in words:
+    if len(palavra) >= 2 and palavra[0] == palavra[-1]:
+      c += 1
+  return c
+
+Questao B. X_antes
+def x_antes(words):
+  comX = []
+  semX = []
+  res = []
+  
+  for palavra in words:
+    if palavra[0] == 'x':
+      comX.append(palavra)
+    else:
+      semX.append(palavra)
+      
+  comX = sorted(comX)
+  semX = sorted(semX)
+  
+  for palavra in comX:
+    res.append(palavra)
+
+  for palavra in semX:
+    res.append(palavra)
+    
+  return res
+
+Questao C. Sort_last
+def sort_last(tuples):
+  return sorted(tuples, key=last)
+
+def last(a): #esta def serve para a letra C
+  return a[-1]
