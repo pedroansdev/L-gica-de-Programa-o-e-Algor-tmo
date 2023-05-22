@@ -13,6 +13,7 @@ Escolha uma delas para começar a se aventurar:
 - <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%209%20-%20Python">LISTA IX</a>
 - <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%2010%20-%20Python">LISTA X<a>
 - <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%2011%20-%20Python">LISTA XI<a>
+- <a href="https://github.com/pedroansdev/Logica-de-Programacao-e-Algoritmo/tree/main/Lista%2013%20-%20Python">LISTA XIII</a>
 
 ## Observações
 
