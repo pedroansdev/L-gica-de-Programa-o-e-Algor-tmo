@@ -1,0 +1,66 @@
+Questao G. Verbing
+def verbing(s):
+  if len(s) >= 3 and s.endswith('ing'):
+    s = s + 'ly'
+    return s
+  if len(s) >= 3:
+    s = s + 'ing'
+    return s
+  else:
+    return s
+
+Questao H. Not_bad
+def not_bad(s):
+  no = s.find('not')
+  bad = s.find('bad')
+  if bad > no:
+    s = s[:no] + 'good' + s[bad+3:]
+  return s
+
+Questao I. Inicio_final
+def inicio_final(a, b):
+  if len(a) % 2 != 0 and len(b) % 2 == 0:
+    firstHalf = a[:len(a)//2 + 1] + b[:len(b)//2]
+    secHalf = a[len(a)//2:] + b[len(b)//2:]
+    return firstHalf + secHalf
+
+  if len(b) % 2 != 0 and len(a) % 2 == 0:
+    firstHalf = a[:len(a)//2] + b[:len(b)//2 + 1]
+    secHalf = a[len(a)//2:] + b[len(b)//2 + 1:]
+    return firstHalf + secHalf
+
+  if len(a) % 2 != 0 and len(b) % 2 != 0:
+    firstHalf = a[:len(a)//2 + 1] + b[:len(b)//2 + 1]
+    secHalf = a[len(a)//2 + 1:] + b[len(b)//2 + 1:]
+    return firstHalf + secHalf
+  
+  if len(a) % 2 == 0 and len(b) % 2 == 0:
+    firstHalf = a[:len(a)//2] + b[:len(b)//2] 
+    secHalf = a[len(a)//2:] + b[len(b)//2:]
+    return firstHalf + secHalf
+
+Questao J. Zf
+def zf(n):
+  n = str(n)[::-1]
+  cont = 0
+  for numero in n:
+    if numero != '0':
+      break
+    cont += 1
+  return cont
+
+Questao K. Conta2
+def conta2(n):
+  s = ''
+  for numero in range(n):
+    s += str(numero)
+  return s.count('2')
+
+Questao L. Inip2
+def inip2(n):
+  pot = 0
+  numero = 0
+  while not str(numero).startswith(str(n)):
+    pot += 1
+    numero = 2 ** pot
+  return pot
